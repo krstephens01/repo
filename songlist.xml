@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href = "Style.css"?>
+
+<songs>
+    <song id = '001'>
+	<title>Heat Waves</title>
+	<artist>Glass Animals</artist>
+	<year>2020</year>
+	<genre>Alternative</genre>
+    </song>
+    <song id = '002'>
+	<title>1985</title>
+	<artist>Bowling for Soup</artist>
+	<year>2004</year>
+	<genre>Rock</genre>
+    </song>
+    <song id = '003'>
+	<title>California</title>
+	<artist>girlfriends</artist>
+	<year>2020</year>
+	<genre>Alternative</genre>
+    </song>
+    <song id = '004'>
+	<title>Alive</title>
+	<artist>Empire of the sun</artist>
+	<year>2013</year>
+	<genre>Alternative</genre>
+    </song>
+    <song id = '005'>
+	<title>Midsummer Madness</title>
+	<artist>88rising</artist>
+	<year>2018</year>
+	<genre>Pop</genre>
+    </song>
+    <song id = '006'>
+	<title>Head in the clouds</title>
+	<artist>88rising</artist>
+	<year>2018</year>
+	<genre>Pop</genre>
+    </song>
+    <song id = '007'>
+	<title>Paralyzed</title>
+	<artist>Sueco</artist>
+	<year>2021</year>
+	<genre>Alternative</genre>
+    </song>
+    <song id = '008'>
+	<title>You're Gonna Go Far, Kid</title>
+	<artist>The Offspring</artist>
+	<year>2008</year>
+	<genre>Rock</genre>
+    </song>
+    <song id = '009'>
+	<title>Shots in the dark</title>
+	<artist>iann dior</artist>
+	<year>2021</year>
+	<genre>Pop</genre>
+    </song>
+    <song id = '010'>
+	<title>I Like it Like That</title>
+	<artist>Hot Chelle Rae</artist>
+	<year>2011</year>
+	<genre>Pop</genre>
+    </song>
+</songs>
