@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	p1{font-size: 24px;}
+	p2{font-size: 24px; text-align: center;}
+
+
+
+	    .JOE {
+            -webkit-columns: 20px 2;
+            -moz-columns: 30px 2;
+            columns: 10px 2;}
+
+
+
+
+</style>
+<title>Joe's Dogs</title>
+<script>
+
+	priceD = 3.75;
+	priceF = 2.00;
+	priceS = 1.50;	
+ 	hotdogs = prompt("Enter how many hotdogs you would like", "0");
+	fries = prompt("Enter how many fries you would like", "0");
+	sodas = prompt("Enter how many sodas you would like", "0");
+	subtotal = ((hotdogs*priceD)+(fries*priceF)+(sodas*priceS));
+	if (subtotal >= 20)
+	   discount = (0.9*subtotal);
+	else
+	   discount = subtotal;
+	total = (discount + (0.0625*discount));
+	total = total.toFixed(2);
+	discount = discount.toFixed(2);
+
+</script>
+</head>
+<body>
+
+    <div class="JOE">
+
+<p1>
+<script>
+	document.write("Hotdogs ordered = " + hotdogs + "</br>");
+		
+	document.write("Fries ordered = " + fries + "</br>");
+
+	document.write("Sodas ordered = " + sodas + "</br>");
+
+</script>
+</p1>
+
+<p2 style= "align: center;">
+<script>
+
+	document.write("Subtotal = " + subtotal + "</br>");
+
+	document.write("Price after Joe's discount (only applies to orders of at least 20$) = ");
+	if (subtotal >= 20)
+	   document.write(discount + "</br>");
+	else document.write(subtotal + "</br>");
+		
+	document.write("Total cost after tax = " + total + "</br>");
+
+</script>
+</p2>
+</div>
+</body>
+</html>
