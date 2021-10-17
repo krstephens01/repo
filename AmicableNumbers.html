@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+	body {
+    	font-size:20px;
+    	padding: 60px;
+    }
+
+</style>
+</head>
+<body>
+
+
+<form>
+<div class = "forms">
+First Number <input type 'text' id='num1'><br />
+Second Number <input type= 'text' id='num2'><br />
+<input type ='button' value = 'Check amicable' onclick = 'amicable()'>
+</div>
+</form>
+
+
+<script language = "javascript">
+function amicable()
+{var number1, number2;
+	number1 = document.getElementById('num1').value;
+    number2 = document.getElementById('num2').value;
+    var array1 = getFactors(number1);
+    var array2 = getFactors(number2);
+    var popup1 = diagnostic(array1, number1);
+    var popup2 = diagnostic(array2, number2);
+    var sum1 = Sum(array1);
+    var sum2 = Sum(array2);
+    alert(popup1 + '\r\n' + popup2);
+	print(sum1, sum2, number1, number2);
+}
+/////////////////////////////////////////////////////////
+//This function gets the factors by scanning the array and seeing if the modulo is zero
+function getFactors(number)
+{
+var array = [];
+for (i=1; i<number; i++){
+	var q = number % i;
+    if (q == 0){
+    	array.push(i);}
+}
+return array;
+}
+
+/////////////////////////////////////////////////////////
+//This function sums all of the numbers within an array
+function Sum(array){
+	var length = array.length;
+    var sum = 0;
+	for (c=0; c<length; c++){
+    	sum = sum + array[c];
+        }
+	return sum;
+}
+//////////////////////////////////////////////////////////
+//Thie provides text to print which shows the factors
+function diagnostic(array, number){
+	var length = array.length;
+    var factors =  "Factors of " + number + " are: ";
+	for (c=0; c<length; c++){
+    	factors = factors + array[c] + " ";
+        }
+return factors;
+}
+////////////////////////////////////////////////////////////
+</script>
+
+<div>
+<script language = "javascript">
+//This seperate script writes whether or not the numbers are amicable
+function print(sum1, sum2, number1, number2){
+    if ((sum1 == number2) && (sum2 == number1))
+    	document.write( "The numbers: " + number1 + " and " + number2 + " are amicable");
+    else document.write("The numbers: " + number1 + " and " + number2 + " are not amicable");
+}
+</script>
+</div>
+</body>
+</html>
