@@ -72,15 +72,20 @@ return factors;
 ////////////////////////////////////////////////////////////
 </script>
 
-<div>
+
 <script language = "javascript">
 //This seperate script writes whether or not the numbers are amicable
 function print(sum1, sum2, number1, number2){
+	var final;
     if ((sum1 == number2) && (sum2 == number1))
-    	document.write( "The numbers: " + number1 + " and " + number2 + " are amicable");
-    else document.write("The numbers: " + number1 + " and " + number2 + " are not amicable");
+    	final = ( "The numbers: " + number1 + " and " + number2 + " are amicable");
+    else final = ("The numbers: " + number1 + " and " + number2 + " are not amicable");
+    
+    document.getElementById("Final-text").innerHTML = final;
 }
 </script>
+<div style = "font-size: 20px; font-weight: normal;">
+<p><span id="Final-text"></span></p>
 </div>
 </body>
 </html>
