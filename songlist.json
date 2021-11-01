@@ -1,0 +1,74 @@
+{
+"songs":[
+	{
+	"Artist": "Glass Animals",
+	"Title": "Heat Waves",
+	"Genre": ["alternative"],
+	"Year": 2020,
+	}
+
+	{
+	"Artist": "girlfriends",
+	"Title": "California",
+	"Genre": ["rock", "alternative"],
+	"Year": 2020,
+	}
+
+	{
+	"Artist": "Emprire of the sun",
+	"Title": "Alive",
+	"Genre": ["alternative"],
+	"Year": 2013,
+	}
+
+	{
+	"Artist": "88Rising",
+	"Title": "Head in the clouds",
+	"Genre": ["pop", "alternative"],
+	"Year": 2018,
+	}
+
+	{
+	"Artist": "88Rising",
+	"Title": "Misummer Madness",
+	"Genre": ["pop"],
+	"Year": 2018,
+	}
+
+	{
+	"Artist": "Sueco",
+	"Title": "Paralyzed",
+	"Genre": ["rock", "alternative"],
+	"Year": 2021,
+	}
+
+	{
+	"Artist": "The Offspring",
+	"Title": "You're Gonna Go Far, Kid",
+	"Genre": ["rock"],
+	"Year": 2008,
+	}
+
+	{
+	"Artist": "iann dior",
+	"Title": "Shots in the dark",
+	"Genre": ["pop"],
+	"Year": 2021,
+	}
+
+	{
+	"Artist": "Hot Chelle Rae",
+	"Title": "I Like it Like That",
+	"Genre": ["pop"],
+	"Year": 2011,
+	}
+		
+	{
+	"Artist": "Bowling for Soup",
+	"Title": "1985",
+	"Genre": ["rock"],
+	"Year": 2004,
+	}
+
+]
+}
