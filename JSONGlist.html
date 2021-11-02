@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSONG list</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<!--script language="javascript" src="animals.json"></script-->
+<style>
+p10{
+	font-size: 30px;}
+</style>
+</head>
+
+<body>
+	<script language="javascript">
+    printSort = "";
+    
+	$.get( "https://krstephens01.github.io/repo/songlist.json", 
+		  function( data ) {
+	str = JSON.stringify(data);
+	str = (str +"<br/>");
+    document.getElementById("printed1").innerHTML = str;
+	
+
+	print2= "<ul>";
+		data.forEach(function(song) {
+		if (song.Genre.length > 1){
+			var Genreprint = song.Genre[0] + ", " + song.Genre[1]}
+		else Genreprint = song.Genre[0]; 
+		print2 += "<p>" 
+			    + song.Title + "</br> Artist: "
+				+ song.Artist + "</br> Genre: "
+				+ Genreprint + "</br> Released "
+				+ song.Year + "</br></p>";
+			}) 
+	print2 += "</ul>";
+	//document.write (print2);
+    document.getElementById("printed2").innerHTML = print2;
+    })
+    
+</script>
+<h1>JSON song list</h1>
+	<form name="sorter" onsubmit="return sort()" method="post">
+	  <label for="songs">Genre:</label>
+	  <select id="songs" name="songs">
+ 	  <option value="pop">pop</option>
+	  <option value="rock">rock</option>
+	  <option value="alternative">alternative</option>
+	  </select>
+      <input type="submit" id = "butn" value = "Sort">
+	</form>
+	<p></br></p>
+    <p10 id = "printedSorter"></p10>
+	<p00 id = "printed1"></p00>
+	<p01 id = "printed2"></p01>
+    
+    
+<script language = "javascript">
+	function sort(){
+    	let response = document.forms["sorter"]["songs"].value;
+		if (response == "rock") {
+        	printSort = "Rock songs: California, Paralyzed, You're Gonna Go Far, Kid, 1985"}
+        if (response == "pop") {
+        	printSort = "Pop songs: Head in the clouds, Midsummer Madness, I like it Like That, Shots in the dark"}
+        if (response == "alternative") 
+        {printSort = "Alternative songs: Heat Waves, California, Alive, Head in the clouds, Paralyzed"}
+        printSort += "</br></br>";
+        document.getElementById("printedSorter").innerHTML = printSort;
+        return false;
+    	}
+
+</script>
+</body>
+</html>
